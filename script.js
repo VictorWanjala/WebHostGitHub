@@ -1,4 +1,12 @@
-const h2 = document.createElement("h2");
-h2.textContent = "This content added by JavaScript";
+const h1 = document.getElementById('containerhead');
 
-document.querySelector("body").appendChild(h2);
+h1.addEventListener("mouseover", function(){
+    h1.style.color = "red";
+    h1.style.fontSize = "48px";
+}
+);
+
+h1.addEventListener("mouseout", function() {
+    h1.style.color = "white";
+    h1.style.fontSize = "40px";
+  });
